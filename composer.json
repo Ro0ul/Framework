@@ -13,7 +13,7 @@
             "email": "137962972+Ro0ul@users.noreply.github.com"
         }
     ],
-    "version":1.0
+    "version":"1.0"
     ,
     "require": {
         "nikic/fast-route": "^1.3",
