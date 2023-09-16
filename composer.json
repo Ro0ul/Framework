@@ -1,5 +1,5 @@
 {
-    "name": "saadn/framework",
+    "name": "roul/framework",
     "description": "A PHP Framework Made By Me",
     "type": "library",
     "autoload": {
