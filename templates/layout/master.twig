@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{css("home")}}">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <section id="header">
+            <div id="logo">
+                {% if surprise %}
+                    {{"Peakaboo"}}
+                {% endif %}
+                
+                <img src="{{image("Logo.png")}}" alt="">
+            </div>
+            <h1>A <span style="color:purple;">Simple</span> Yet not so <span style="color:orange;">powerful</span> Framework</h1>
+        </section>
+        <hr>
+        <main id="main">
+            <h1>To Start : </h1>
+            <p>Edit The <span style="color: green;">sayHi</span> Method in /src/Controllers/Controller.php File</p>
+            <p>To Something Like : </p>
+            <div id="code">
+                $this->template->addExtension(new Assets);
+                $this->response->setContentBody($this->template->render("index.twig",["surprise"=>true]));
+                echo $this->response->getContentBody();
+            </div>
+            <p>And Check The Surprise</p>
+        </main>
+        <footer id="footer">
+            <p>Made By Roul</p>
+        </footer>
+    </div>
+</body>
+</html>
